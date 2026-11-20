@@ -1,6 +1,6 @@
 # GorillaBot
 
-this a gorilla tag bot
+This Bot Will Only Join My Fan Codes that will work and it will update as my codes will update
 
 ## Credits \& Licensing
 
