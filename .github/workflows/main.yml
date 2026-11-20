@@ -1,0 +1,20 @@
+name: Build GorillaBot
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Build DLL
+        run: dotnet build Content/GorillaTagModTemplateProject/GorillaBot.csproj -c Release
+      - name: Upload DLL
+        uses: actions/upload-artifact@v4
+        with:
+          name: GorillaBot-DLL
+          path: Content/GorillaTagModTemplateProject/bin/Release/**/*.dll
