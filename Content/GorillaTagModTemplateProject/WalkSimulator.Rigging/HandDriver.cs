@@ -55,7 +55,8 @@ namespace WalkSimulator.Rigging
                 return;
             }
 
-           controller = isLeft ? GorillaLocomotion.GTPlayer.Instance.leftControllerTransform : GorillaLocomotion.GTPlayer.Instance.rightControllerTransform;
+          controller = isLeft ? GorillaLocomotion.GTPlayer.Instance.LeftHand.controllerTransform : GorillaLocomotion.GTPlayer.Instance.RightHand.controllerTransform;
+
 
 
             if (GorillaTagger.Instance == null || GorillaTagger.Instance.offlineVRRig == null)
