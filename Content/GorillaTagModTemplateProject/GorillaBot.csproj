@@ -104,11 +104,11 @@
     <Reference Include="Unity.Animation.Rigging">
       <HintPath>$(GameAssemblyPath)\Unity.Animation.Rigging.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>$(GameAssemblyPath)\Unity.Burst.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Unsafe">
+       <Reference Include="Unity.Burst.Unsafe">
       <HintPath>$(GameAssemblyPath)\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>$(GameAssemblyPath)\Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Cinemachine">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Gorilla Tag\Gorilla Tag_Data\Managed\Unity.Cinemachine.dll</HintPath>
